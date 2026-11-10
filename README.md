@@ -6,8 +6,23 @@ Bring your own framework. The skill asks for your career ladder (file path, past
 
 ## Install
 
+Claude Code:
+
+```
+/plugin marketplace add robertmnyborg/claude-harness
+/plugin install self-review-evaluator@claude-harness
+```
+
+Codex, Cursor, and other agents that read `SKILL.md`, via the [skills CLI](https://skills.sh):
+
 ```bash
-git clone <this repo> self-review-evaluator
+npx skills add robertmnyborg/self-review-evaluator
+```
+
+### Manual install
+
+```bash
+git clone https://github.com/robertmnyborg/self-review-evaluator
 cp -R self-review-evaluator/skills/* ~/.claude/skills/
 ```
 
